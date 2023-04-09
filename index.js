@@ -10,6 +10,10 @@ app.get('/', (req, res) => {
     res.send('<h2>REST APIs for CRUD App</h2>')
 })
 
+const studentRouter = require('./routes/index');
+
+app.use('/student', studentRouter);
+
 app.listen(port, function(err){
     if(err){
         console.log(`Error in running server ${err}`);
