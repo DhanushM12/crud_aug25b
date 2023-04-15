@@ -10,4 +10,16 @@ Content-Type: application/json
 GET http://localhost:8080/student/list
 
 ###
-GET http://localhost:8080/student/id
+GET http://localhost:8080/student/643276822f18a6e07ad761c5
+
+###
+PATCH http://localhost:8080/student/643276822f18a6e07ad761c5
+Content-Type: application/json
+
+{
+    "name": "studentnew",
+    "company": "cn"
+}
+
+###
+DELETE http://localhost:8080/student/643277342f18a6e07ad761cd
